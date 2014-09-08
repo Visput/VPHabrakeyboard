@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F043ED3819BE34340034101B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F043ED3719BE34340034101B /* Settings.bundle */; };
 		F0C5BF6819BCDB0D004FA048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C5BF5E19BCDB0D004FA048 /* Main.storyboard */; };
 		F0C5BF6919BCDB0D004FA048 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C5BF6019BCDB0D004FA048 /* Images.xcassets */; };
 		F0C5BF6B19BCDB0D004FA048 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C5BF6319BCDB0D004FA048 /* main.m */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F043ED3719BE34340034101B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F0C5BF1019BCD667004FA048 /* VPHabrakeyboardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPHabrakeyboardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C5BF5F19BCDB0D004FA048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0C5BF6019BCDB0D004FA048 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				F0C5BF9219BCF533004FA048 /* Info.plist */,
 				F0C5BF9A19BCF56F004FA048 /* Images.xcassets */,
 				F0D6FFA319BDE4230077BF3D /* tags.json */,
+				F043ED3719BE34340034101B /* Settings.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -228,6 +231,11 @@
 					};
 					F0C5BF7119BCDDCF004FA048 = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -264,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F043ED3819BE34340034101B /* Settings.bundle in Resources */,
 				F0C5BF9B19BCF56F004FA048 /* Images.xcassets in Resources */,
 				F0C5BF9919BCF556004FA048 /* VPKeyboardViewController.xib in Resources */,
 				F0D6FFA419BDE4230077BF3D /* tags.json in Resources */,

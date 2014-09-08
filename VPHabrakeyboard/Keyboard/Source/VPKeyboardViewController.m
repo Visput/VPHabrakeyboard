@@ -8,6 +8,8 @@
 
 #import "VPKeyboardViewController.h"
 
+static NSString *const kVPUserDefaultsGesturesIsEnabledKey = @"gestures_preference";
+
 @interface VPKeyboardViewController ()
 
 @property (nonatomic, strong) IBOutlet UIView *keyboardView;
@@ -65,13 +67,17 @@
 }
 
 - (IBAction)onLeftSwipeRecognized:(id)sender {
-    if (self.textDocumentProxy.documentContextBeforeInput.length > 0) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:kVPUserDefaultsGesturesIsEnabledKey] &&
+        self.textDocumentProxy.documentContextBeforeInput.length > 0) {
+        
         [self.textDocumentProxy adjustTextPositionByCharacterOffset:-1];
     }
 }
 
 - (IBAction)onRightSwipeRecognized:(id)sender {
-    if (self.textDocumentProxy.documentContextAfterInput.length > 0) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:kVPUserDefaultsGesturesIsEnabledKey] &&
+        self.textDocumentProxy.documentContextAfterInput.length > 0) {
+        
         [self.textDocumentProxy adjustTextPositionByCharacterOffset:1];
     }
 }
