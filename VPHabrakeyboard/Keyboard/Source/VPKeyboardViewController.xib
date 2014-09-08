@@ -510,6 +510,6 @@
         <image name="button_globe" width="34" height="39"/>
         <image name="button_hide" width="34" height="39"/>
         <image name="button_white" width="98" height="33"/>
-        <image name="button_white_large" width="184" height="39"/>
+        <image name="button_white_large" width="142" height="39"/>
     </resources>
 </document>
