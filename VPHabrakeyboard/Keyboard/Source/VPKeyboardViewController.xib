@@ -33,11 +33,14 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
+                            <exclude reference="5Sn-gX-MVp"/>
                             <exclude reference="rA9-OB-yqh"/>
                             <exclude reference="tQn-QO-NeO"/>
-                            <exclude reference="5Sn-gX-MVp"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="Ixs-8L-Sdh"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQ7-h7-wOe">
                     <rect key="frame" x="217" y="87" width="98" height="33"/>
@@ -55,11 +58,14 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
+                            <exclude reference="NFb-0l-4N1"/>
                             <exclude reference="mn0-2U-zgG"/>
                             <exclude reference="nx7-wO-VtW"/>
-                            <exclude reference="NFb-0l-4N1"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="AP7-Vr-HdT"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyF-4b-zng">
                     <rect key="frame" x="111" y="87" width="98" height="33"/>
@@ -77,11 +83,14 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="yWS-Va-7Cz"/>
                             <exclude reference="gR9-dW-DEz"/>
                             <exclude reference="hAO-ed-HwP"/>
+                            <exclude reference="yWS-Va-7Cz"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="ENX-C0-Uig"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEe-hz-LVI">
                     <rect key="frame" x="5" y="5" width="98" height="33"/>
@@ -104,6 +113,9 @@
                             <exclude reference="RCs-K3-jKp"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="rjF-rl-ZZh"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQS-Fn-3ih">
                     <rect key="frame" x="217" y="5" width="98" height="33"/>
@@ -121,11 +133,14 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="xa4-Hn-jjP"/>
                             <exclude reference="NqJ-iq-6fX"/>
                             <exclude reference="hmX-f6-8wV"/>
+                            <exclude reference="xa4-Hn-jjP"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="4Xo-E5-9kP"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hg-Bx-8Q7">
                     <rect key="frame" x="111" y="5" width="98" height="33"/>
@@ -143,11 +158,14 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="wd1-tG-f8u"/>
-                            <exclude reference="sRk-CC-4eh"/>
                             <exclude reference="nWe-dK-Aql"/>
+                            <exclude reference="sRk-CC-4eh"/>
+                            <exclude reference="wd1-tG-f8u"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="Sfa-Ik-60t"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnI-NW-96C">
                     <rect key="frame" x="89" y="172" width="184" height="39"/>
@@ -170,6 +188,9 @@
                             <exclude reference="xey-jp-uPs"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="xrN-iT-GSw"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA2-Ya-9GD" userLabel="Dismiss">
                     <rect key="frame" x="47" y="172" width="34" height="39"/>
@@ -227,10 +248,13 @@
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="8dl-sZ-l9t"/>
-                            <exclude reference="rXs-hx-QTU"/>
                             <exclude reference="KuV-6L-xMe"/>
+                            <exclude reference="rXs-hx-QTU"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="rgz-mP-coh"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljl-ty-WUb">
                     <rect key="frame" x="217" y="46" width="98" height="33"/>
@@ -248,11 +272,14 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="Ofp-Bo-OhL"/>
                             <exclude reference="79H-0b-ALg"/>
+                            <exclude reference="Ofp-Bo-OhL"/>
                             <exclude reference="dLH-Pc-ZDN"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="s8m-XE-Mit"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exn-FN-cLJ">
                     <rect key="frame" x="111" y="46" width="98" height="33"/>
@@ -270,11 +297,14 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="m2Y-4M-RAO"/>
                             <exclude reference="Qlt-KS-NkL"/>
                             <exclude reference="bps-Iu-u4o"/>
+                            <exclude reference="m2Y-4M-RAO"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="pEC-5i-Xvd"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-hR-6Yf">
                     <rect key="frame" x="5" y="128" width="98" height="33"/>
@@ -297,6 +327,9 @@
                             <exclude reference="sz9-oA-DGT"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="s1P-dx-xuF"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3D-pH-ftd">
                     <rect key="frame" x="217" y="128" width="98" height="33"/>
@@ -314,11 +347,14 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="UlQ-BA-PRn"/>
                             <exclude reference="3n5-1L-XdI"/>
                             <exclude reference="7CI-9K-wZo"/>
+                            <exclude reference="UlQ-BA-PRn"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="lhd-zz-Uul"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPX-Ec-cHD">
                     <rect key="frame" x="111" y="128" width="98" height="33"/>
@@ -341,6 +377,9 @@
                             <exclude reference="kVP-Tv-NKg"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="nWu-uC-GEE"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
