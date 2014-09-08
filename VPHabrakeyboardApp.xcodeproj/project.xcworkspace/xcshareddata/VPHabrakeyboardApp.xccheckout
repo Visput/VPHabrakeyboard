@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2059A528-C907-40F6-9A18-C5F894D5A5A7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VPHabrakeyboardApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>95C55BC69FEA39B58EF41EC35F3ED2434592A87B</key>
+		<string>https://github.com/Visput/Habrakeyboard.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VPHabrakeyboard/VPHabrakeyboardApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>95C55BC69FEA39B58EF41EC35F3ED2434592A87B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Visput/Habrakeyboard.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>95C55BC69FEA39B58EF41EC35F3ED2434592A87B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>95C55BC69FEA39B58EF41EC35F3ED2434592A87B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Habrakeyboard</string>
+		</dict>
+	</array>
+</dict>
+</plist>
