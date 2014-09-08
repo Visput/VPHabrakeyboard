@@ -168,11 +168,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnI-NW-96C">
-                    <rect key="frame" x="89" y="172" width="184" height="39"/>
+                    <rect key="frame" x="89" y="172" width="142" height="39"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="39" id="9jY-TA-iVs"/>
                         <constraint firstAttribute="height" constant="39" id="CGr-DN-nDl"/>
-                        <constraint firstAttribute="width" constant="184" id="lz8-rC-yRs"/>
+                        <constraint firstAttribute="width" constant="142" id="lz8-rC-yRs"/>
                         <constraint firstAttribute="width" constant="34" id="onp-eU-UIM"/>
                         <constraint firstAttribute="height" constant="39" id="xey-jp-uPs"/>
                     </constraints>
@@ -215,7 +215,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="onDeleteButtonPressed:" destination="-1" eventType="touchUpInside" id="MB5-qA-6T7"/>
+                        <action selector="onDeleteButtonPressed:" destination="-1" eventType="touchUpInside" id="vMG-F3-Fqu"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PM-eQ-ICB" userLabel="Globe">
@@ -381,6 +381,20 @@
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="nWu-uC-GEE"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQh-El-1Kx" userLabel="Clear">
+                    <rect key="frame" x="239" y="172" width="34" height="39"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="EhE-FK-yzM"/>
+                        <constraint firstAttribute="height" constant="39" id="q81-AE-goQ"/>
+                    </constraints>
+                    <state key="normal" image="button_clear">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="vy4-5e-PPD" appends="YES" id="Lmz-vT-fCA"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <gestureRecognizers/>
@@ -389,6 +403,7 @@
                 <constraint firstItem="exn-FN-cLJ" firstAttribute="leading" secondItem="2LC-Ja-93c" secondAttribute="trailing" constant="8" id="11j-c9-UBn"/>
                 <constraint firstAttribute="trailing" secondItem="gQ8-iP-7il" secondAttribute="trailing" constant="8" id="2co-5d-npI"/>
                 <constraint firstItem="GPX-Ec-cHD" firstAttribute="top" secondItem="KyF-4b-zng" secondAttribute="bottom" constant="8" id="2wt-5i-8yy"/>
+                <constraint firstItem="DnI-NW-96C" firstAttribute="top" secondItem="GPX-Ec-cHD" secondAttribute="bottom" constant="11" id="3aR-9q-PjE"/>
                 <constraint firstItem="exn-FN-cLJ" firstAttribute="top" secondItem="7hg-Bx-8Q7" secondAttribute="bottom" constant="8" id="4iG-mv-Uc8"/>
                 <constraint firstItem="Ljl-ty-WUb" firstAttribute="leading" secondItem="exn-FN-cLJ" secondAttribute="trailing" constant="8" id="6d8-ko-TbR"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="7zx-ZF-QAA"/>
@@ -399,6 +414,7 @@
                 <constraint firstItem="b3D-pH-ftd" firstAttribute="leading" secondItem="GPX-Ec-cHD" secondAttribute="trailing" constant="8" id="H20-dz-Rmg"/>
                 <constraint firstItem="pBL-hR-6Yf" firstAttribute="top" secondItem="0AY-Yg-r4v" secondAttribute="bottom" constant="8" id="H2U-Uq-Yrn"/>
                 <constraint firstAttribute="trailing" secondItem="Heq-eE-RaD" secondAttribute="trailing" id="Hgk-pZ-Yd6"/>
+                <constraint firstItem="GQh-El-1Kx" firstAttribute="top" secondItem="b3D-pH-ftd" secondAttribute="bottom" constant="11" id="Jc7-aG-Tjt"/>
                 <constraint firstItem="QQ7-h7-wOe" firstAttribute="top" secondItem="Ljl-ty-WUb" secondAttribute="bottom" constant="8" id="OUb-j1-6gG"/>
                 <constraint firstItem="DnI-NW-96C" firstAttribute="leading" secondItem="SA2-Ya-9GD" secondAttribute="trailing" constant="8" id="QQ2-lB-Z2N"/>
                 <constraint firstAttribute="bottom" secondItem="Heq-eE-RaD" secondAttribute="bottom" id="QfK-Xk-k90"/>
@@ -414,7 +430,9 @@
                 <constraint firstItem="7hg-Bx-8Q7" firstAttribute="leading" secondItem="MEe-hz-LVI" secondAttribute="trailing" constant="8" id="adL-eu-Ehy"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="top" secondItem="2LC-Ja-93c" secondAttribute="bottom" constant="8" id="bWt-1X-sbH"/>
                 <constraint firstItem="1PM-eQ-ICB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="bWu-cV-0PE"/>
+                <constraint firstItem="DnI-NW-96C" firstAttribute="leading" secondItem="SA2-Ya-9GD" secondAttribute="trailing" constant="8" id="byT-vs-mEb"/>
                 <constraint firstItem="GPX-Ec-cHD" firstAttribute="leading" secondItem="pBL-hR-6Yf" secondAttribute="trailing" constant="8" id="bzj-CJ-Gmv"/>
+                <constraint firstItem="gQ8-iP-7il" firstAttribute="leading" secondItem="GQh-El-1Kx" secondAttribute="trailing" constant="8" id="cZp-CF-cyg"/>
                 <constraint firstItem="b3D-pH-ftd" firstAttribute="leading" secondItem="GPX-Ec-cHD" secondAttribute="trailing" constant="8" id="dK4-K2-FER"/>
                 <constraint firstItem="1PM-eQ-ICB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="dsO-HU-Rod"/>
                 <constraint firstItem="Ljl-ty-WUb" firstAttribute="leading" secondItem="exn-FN-cLJ" secondAttribute="trailing" constant="8" id="e7R-RA-BKz"/>
@@ -426,11 +444,15 @@
                 <constraint firstItem="KyF-4b-zng" firstAttribute="leading" secondItem="0AY-Yg-r4v" secondAttribute="trailing" constant="8" id="n8D-WW-tMz"/>
                 <constraint firstItem="MEe-hz-LVI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="oNr-aa-0zA"/>
                 <constraint firstItem="7hg-Bx-8Q7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="on1-oy-Iwm"/>
+                <constraint firstItem="gQ8-iP-7il" firstAttribute="leading" secondItem="GQh-El-1Kx" secondAttribute="trailing" constant="8" id="pNI-8Q-2DH"/>
                 <constraint firstItem="DnI-NW-96C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="qri-Tr-Th7"/>
                 <constraint firstItem="OQS-Fn-3ih" firstAttribute="leading" secondItem="7hg-Bx-8Q7" secondAttribute="trailing" constant="8" id="sa9-5c-g17"/>
                 <constraint firstItem="2LC-Ja-93c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="sch-9V-Bsd"/>
+                <constraint firstItem="GQh-El-1Kx" firstAttribute="leading" secondItem="DnI-NW-96C" secondAttribute="trailing" constant="8" id="uYr-SZ-ioA"/>
+                <constraint firstItem="GQh-El-1Kx" firstAttribute="leading" secondItem="DnI-NW-96C" secondAttribute="trailing" constant="8" id="v5h-vG-Wwp"/>
                 <constraint firstItem="Ljl-ty-WUb" firstAttribute="top" secondItem="OQS-Fn-3ih" secondAttribute="bottom" constant="8" id="yYb-Si-aPM"/>
                 <constraint firstItem="KyF-4b-zng" firstAttribute="leading" secondItem="0AY-Yg-r4v" secondAttribute="trailing" constant="8" id="yu1-mD-8dS"/>
+                <constraint firstItem="GQh-El-1Kx" firstAttribute="top" secondItem="b3D-pH-ftd" secondAttribute="bottom" constant="11" id="zJ3-f9-CDB"/>
                 <constraint firstItem="OQS-Fn-3ih" firstAttribute="leading" secondItem="7hg-Bx-8Q7" secondAttribute="trailing" constant="8" id="zua-4i-WBS"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -446,11 +468,17 @@
                     <exclude reference="khM-0c-M3c"/>
                     <exclude reference="ZkE-jY-ZaN"/>
                     <exclude reference="gGP-Mo-X2j"/>
+                    <exclude reference="QQ2-lB-Z2N"/>
+                    <exclude reference="qri-Tr-Th7"/>
                     <exclude reference="zua-4i-WBS"/>
                     <exclude reference="e7R-RA-BKz"/>
                     <exclude reference="YTB-dw-Et6"/>
                     <exclude reference="dK4-K2-FER"/>
+                    <exclude reference="uYr-SZ-ioA"/>
+                    <exclude reference="zJ3-f9-CDB"/>
                     <exclude reference="2co-5d-npI"/>
+                    <exclude reference="VDn-Kv-30d"/>
+                    <exclude reference="cZp-CF-cyg"/>
                 </mask>
             </variation>
             <connections>
@@ -469,9 +497,15 @@
                 <action selector="onRightSwipeRecognized:" destination="-1" id="q8J-1g-hrR"/>
             </connections>
         </swipeGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="vy4-5e-PPD">
+            <connections>
+                <action selector="onClearButtonPressed:" destination="-1" id="lml-uF-NgX"/>
+            </connections>
+        </pongPressGestureRecognizer>
     </objects>
     <resources>
         <image name="background" width="320" height="216"/>
+        <image name="button_clear" width="34" height="39"/>
         <image name="button_delete" width="34" height="39"/>
         <image name="button_globe" width="34" height="39"/>
         <image name="button_hide" width="34" height="39"/>

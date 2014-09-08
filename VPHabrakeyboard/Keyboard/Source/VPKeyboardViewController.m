@@ -17,10 +17,6 @@
 
 @implementation VPKeyboardViewController
 
-- (void)updateViewConstraints {
-    [super updateViewConstraints];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadKeyboard];
@@ -40,6 +36,18 @@
     }
 }
 
+- (IBAction)onClearButtonPressed:(id)sender {
+    NSInteger endPositionOffset = self.textDocumentProxy.documentContextAfterInput.length;
+    [self.textDocumentProxy adjustTextPositionByCharacterOffset:endPositionOffset];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        // We can't know when text position adjustment is finished
+        // Hack: Call this code after delay. In other case these changes won't be applied
+        while (self.textDocumentProxy.documentContextBeforeInput.length > 0) {
+            [self.textDocumentProxy deleteBackward];
+        }
+    });
+}
+
 - (IBAction)onDismissKeyboardButtonPressed:(id)sender {
     [self dismissKeyboard];
 }
@@ -48,7 +56,12 @@
     NSString *tagKey = [sender titleForState:UIControlStateNormal];
     NSString *tagValue = self.tagsDictionary[tagKey];
     [self.textDocumentProxy insertText:tagValue];
-    [self moveTextPositionToInputPointForTag:tagValue];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        // We can't know when text insert is finished
+        // Hack: Call this code after delay. In other case these changes won't be applied
+        [self moveTextPositionToInputPointForTag:tagValue];
+    });
 }
 
 - (IBAction)onLeftSwipeRecognized:(id)sender {
@@ -85,10 +98,7 @@
         NSRange labelRange = [tag rangeOfString:label];
         if (labelRange.location != NSNotFound) {
             NSInteger offset = labelRange.location + labelRange.length - tag.length;
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                // Hack: Call this code after delay. In other case these changes won't be applied
-                [self.textDocumentProxy adjustTextPositionByCharacterOffset:offset];
-            });
+            [self.textDocumentProxy adjustTextPositionByCharacterOffset:offset];
             break;
         }
     }
