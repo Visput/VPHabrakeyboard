@@ -87,6 +87,7 @@ static NSString *const kVPUserDefaultsGesturesIsEnabledKey = @"gestures_preferen
 
 - (void)loadKeyboard {
     [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil];
+    self.keyboardView.frame = self.view.frame;
     [self.view addSubview:self.keyboardView];
 }
 
