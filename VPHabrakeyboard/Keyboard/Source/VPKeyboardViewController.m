@@ -8,11 +8,12 @@
 
 #import "VPKeyboardViewController.h"
 
-static NSString *const kVPUserDefaultsGesturesIsEnabledKey = @"gestures_preference";
-
 @interface VPKeyboardViewController ()
 
 @property (nonatomic, strong) IBOutlet UIView *keyboardView;
+@property (nonatomic, strong) IBOutlet UIButton *sarcasmButton;
+@property (nonatomic, strong) IBOutlet UIButton *downerButton;
+
 @property (nonatomic, strong) NSDictionary *tagsDictionary;
 
 @end
@@ -22,6 +23,10 @@ static NSString *const kVPUserDefaultsGesturesIsEnabledKey = @"gestures_preferen
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadKeyboard];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     [self loadTags];
 }
 
@@ -67,17 +72,13 @@ static NSString *const kVPUserDefaultsGesturesIsEnabledKey = @"gestures_preferen
 }
 
 - (IBAction)onLeftSwipeRecognized:(id)sender {
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:kVPUserDefaultsGesturesIsEnabledKey] &&
-        self.textDocumentProxy.documentContextBeforeInput.length > 0) {
-        
+    if (self.textDocumentProxy.documentContextBeforeInput.length > 0) {
         [self.textDocumentProxy adjustTextPositionByCharacterOffset:-1];
     }
 }
 
 - (IBAction)onRightSwipeRecognized:(id)sender {
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:kVPUserDefaultsGesturesIsEnabledKey] &&
-        self.textDocumentProxy.documentContextAfterInput.length > 0) {
-        
+    if (self.textDocumentProxy.documentContextAfterInput.length > 0) {
         [self.textDocumentProxy adjustTextPositionByCharacterOffset:1];
     }
 }
@@ -92,15 +93,33 @@ static NSString *const kVPUserDefaultsGesturesIsEnabledKey = @"gestures_preferen
 }
 
 - (void)loadTags {
+    // Load tags from json file
     NSString *tagsFilePath = [[NSBundle mainBundle] pathForResource:@"tags" ofType:@"json"];
     NSData *tagsData = [NSData dataWithContentsOfFile:tagsFilePath];
     NSError *error = nil;
-    self.tagsDictionary = [NSJSONSerialization JSONObjectWithData:tagsData options:NSJSONReadingAllowFragments error:&error];
+    NSMutableDictionary *tagsDictionary = [NSJSONSerialization JSONObjectWithData:tagsData
+                                                                          options:NSJSONReadingMutableContainers
+                                                                            error:&error];
     NSAssert(error == nil, @"Invalid data format in file: %@", tagsFilePath);
+    
+    // Load tags from settings
+    static NSString *const kSarcasmTagOpenKey = @"SarcasmTagOpen";
+    static NSString *const kSarcasmTagCloseKey = @"SarcasmTagClose";
+    static NSString *const kDownerTagOpenKey = @"DownerTagOpen";
+    static NSString *const kDownerTagCloseKey = @"DownerTagClose";
+    static NSString *const kCustomTagFormat = @"[%@][/%@]";
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *sarcasmTag = [NSString stringWithFormat:kCustomTagFormat, [userDefaults valueForKey:kSarcasmTagOpenKey], [userDefaults valueForKey:kSarcasmTagCloseKey]];
+    NSString *downerTag = [NSString stringWithFormat:kCustomTagFormat, [userDefaults valueForKey:kDownerTagOpenKey], [userDefaults valueForKey:kDownerTagCloseKey]];
+    [tagsDictionary setValue:sarcasmTag forKey:[self.sarcasmButton titleForState:UIControlStateNormal]];
+    [tagsDictionary setValue:downerTag forKey:[self.downerButton titleForState:UIControlStateNormal]];
+    
+    self.tagsDictionary = [NSDictionary dictionaryWithDictionary:tagsDictionary];
 }
 
 - (void)moveTextPositionToInputPointForTag:(NSString *)tag {
-    NSArray *inputPointLabels = @[@"://", @"=\"", @">"];
+    NSArray *inputPointLabels = @[@"]", @"://", @"=\"", @">"];
     for (NSString *label in inputPointLabels) {
         NSRange labelRange = [tag rangeOfString:label];
         if (labelRange.location != NSNotFound) {

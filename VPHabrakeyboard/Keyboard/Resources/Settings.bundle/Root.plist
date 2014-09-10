@@ -6,19 +6,55 @@
 	<array>
 		<dict>
 			<key>Title</key>
-			<string>Жесты</string>
+			<string>Сарказм</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
 		<dict>
-			<key>DefaultValue</key>
-			<true/>
-			<key>Key</key>
-			<string>gestures_preference</string>
-			<key>Title</key>
-			<string>Разрешить жесты</string>
 			<key>Type</key>
-			<string>PSToggleSwitchSpecifier</string>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Открыть тэг:</string>
+			<key>Key</key>
+			<string>SarcasmTagOpen</string>
+			<key>DefaultValue</key>
+			<string>sarcasm mode on</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Закрыть тэг:</string>
+			<key>Key</key>
+			<string>SarcasmTagClose</string>
+			<key>DefaultValue</key>
+			<string>sarcasm mode off</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Зануда</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Открыть тэг:</string>
+			<key>Key</key>
+			<string>DownerTagOpen</string>
+			<key>DefaultValue</key>
+			<string>zanuda mode on</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Закрыть тэг:</string>
+			<key>Key</key>
+			<string>DownerTagClose</string>
+			<key>DefaultValue</key>
+			<string>zanuda mode off</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

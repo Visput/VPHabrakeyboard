@@ -9,7 +9,5 @@
     "Картинка": "<img src=\"http://\"/>",
     "Видео": "<video>http://</video>",
     "Спойлер": "<spoiler title=\"\"></spoiler>",
-    "Аббревиатура": "<abbr title=\"\"></abbr>",
-    "Акроним": "<acronym title=\"\"></acronym>",
     "Хабраюзер": "<hh user=\"\"/>"
 }
