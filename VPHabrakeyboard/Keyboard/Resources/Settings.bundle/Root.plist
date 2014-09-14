@@ -14,7 +14,7 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Открыть тэг:</string>
+			<string>Открыть тег:</string>
 			<key>Key</key>
 			<string>SarcasmTagOpen</string>
 			<key>DefaultValue</key>
@@ -24,7 +24,7 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Закрыть тэг:</string>
+			<string>Закрыть тег:</string>
 			<key>Key</key>
 			<string>SarcasmTagClose</string>
 			<key>DefaultValue</key>
@@ -40,7 +40,7 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Открыть тэг:</string>
+			<string>Открыть тег:</string>
 			<key>Key</key>
 			<string>DownerTagOpen</string>
 			<key>DefaultValue</key>
@@ -50,7 +50,7 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Закрыть тэг:</string>
+			<string>Закрыть тег:</string>
 			<key>Key</key>
 			<string>DownerTagClose</string>
 			<key>DefaultValue</key>
