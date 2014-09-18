@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -16,9 +16,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Heq-eE-RaD">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AY-Yg-r4v">
                     <rect key="frame" x="5" y="87" width="98" height="33"/>
                     <constraints>
@@ -398,7 +395,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.83921575546264648" green="0.85490202903747559" blue="0.87450987100601196" alpha="1" colorSpace="deviceRGB"/>
             <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="7hg-Bx-8Q7" firstAttribute="leading" secondItem="MEe-hz-LVI" secondAttribute="trailing" constant="8" id="0oH-SN-cPz"/>
@@ -411,15 +408,11 @@
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="7zx-ZF-QAA"/>
                 <constraint firstItem="OQS-Fn-3ih" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="9Lq-91-FgR"/>
                 <constraint firstItem="KyF-4b-zng" firstAttribute="top" secondItem="exn-FN-cLJ" secondAttribute="bottom" constant="8" id="B2d-cz-Ngg"/>
-                <constraint firstItem="Heq-eE-RaD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BzA-2T-WH3"/>
-                <constraint firstItem="Heq-eE-RaD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E2a-Ax-c1e"/>
                 <constraint firstItem="b3D-pH-ftd" firstAttribute="leading" secondItem="GPX-Ec-cHD" secondAttribute="trailing" constant="8" id="H20-dz-Rmg"/>
                 <constraint firstItem="pBL-hR-6Yf" firstAttribute="top" secondItem="0AY-Yg-r4v" secondAttribute="bottom" constant="8" id="H2U-Uq-Yrn"/>
-                <constraint firstAttribute="trailing" secondItem="Heq-eE-RaD" secondAttribute="trailing" id="Hgk-pZ-Yd6"/>
                 <constraint firstItem="GQh-El-1Kx" firstAttribute="top" secondItem="b3D-pH-ftd" secondAttribute="bottom" constant="11" id="Jc7-aG-Tjt"/>
                 <constraint firstItem="QQ7-h7-wOe" firstAttribute="top" secondItem="Ljl-ty-WUb" secondAttribute="bottom" constant="8" id="OUb-j1-6gG"/>
                 <constraint firstItem="DnI-NW-96C" firstAttribute="leading" secondItem="SA2-Ya-9GD" secondAttribute="trailing" constant="8" id="QQ2-lB-Z2N"/>
-                <constraint firstAttribute="bottom" secondItem="Heq-eE-RaD" secondAttribute="bottom" id="QfK-Xk-k90"/>
                 <constraint firstItem="gQ8-iP-7il" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="SSg-da-x10"/>
                 <constraint firstItem="b3D-pH-ftd" firstAttribute="top" secondItem="QQ7-h7-wOe" secondAttribute="bottom" constant="8" id="SmY-va-big"/>
                 <constraint firstItem="pBL-hR-6Yf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="T3s-Tg-iZU"/>
@@ -506,7 +499,6 @@
         </pongPressGestureRecognizer>
     </objects>
     <resources>
-        <image name="background" width="320" height="216"/>
         <image name="button_clear" width="34" height="39"/>
         <image name="button_delete" width="34" height="39"/>
         <image name="button_globe" width="34" height="39"/>

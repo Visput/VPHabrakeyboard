@@ -110,8 +110,20 @@
     static NSString *const kCustomTagFormat = @"[%@][/%@]";
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSString *sarcasmTag = [NSString stringWithFormat:kCustomTagFormat, [userDefaults valueForKey:kSarcasmTagOpenKey], [userDefaults valueForKey:kSarcasmTagCloseKey]];
-    NSString *downerTag = [NSString stringWithFormat:kCustomTagFormat, [userDefaults valueForKey:kDownerTagOpenKey], [userDefaults valueForKey:kDownerTagCloseKey]];
+    
+    NSString *sarcasmTag = nil;
+    if ([userDefaults valueForKey:kSarcasmTagOpenKey] != nil && [userDefaults valueForKey:kSarcasmTagCloseKey]) {
+        sarcasmTag = [NSString stringWithFormat:kCustomTagFormat, [userDefaults valueForKey:kSarcasmTagOpenKey], [userDefaults valueForKey:kSarcasmTagCloseKey]];
+    } else {
+        sarcasmTag = [NSString stringWithFormat:kCustomTagFormat, @"sarcasm mode on", @"sarcasm mode off"];
+    }
+    NSString *downerTag = nil;
+    if ([userDefaults valueForKey:kDownerTagOpenKey] != nil && [userDefaults valueForKey:kDownerTagCloseKey]) {
+        downerTag = [NSString stringWithFormat:kCustomTagFormat, [userDefaults valueForKey:kDownerTagOpenKey], [userDefaults valueForKey:kDownerTagCloseKey]];
+    } else {
+        downerTag = [NSString stringWithFormat:kCustomTagFormat, @"zanuda mode on", @"zanuda mode off"];
+    }
+    
     [tagsDictionary setValue:sarcasmTag forKey:[self.sarcasmButton titleForState:UIControlStateNormal]];
     [tagsDictionary setValue:downerTag forKey:[self.downerButton titleForState:UIControlStateNormal]];
     
