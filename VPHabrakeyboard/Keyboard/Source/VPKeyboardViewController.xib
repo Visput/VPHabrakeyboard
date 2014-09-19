@@ -480,7 +480,7 @@
                 <outletCollection property="gestureRecognizers" destination="4Zp-A9-uBS" appends="YES" id="8Ck-iV-wpU"/>
                 <outletCollection property="gestureRecognizers" destination="DOH-sG-E7s" appends="YES" id="qnF-mO-OwY"/>
             </connections>
-            <point key="canvasLocation" x="98" y="229"/>
+            <point key="canvasLocation" x="109" y="256"/>
         </view>
         <swipeGestureRecognizer direction="left" id="4Zp-A9-uBS">
             <connections>

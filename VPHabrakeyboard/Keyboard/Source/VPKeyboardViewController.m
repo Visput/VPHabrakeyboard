@@ -110,7 +110,6 @@
     static NSString *const kCustomTagFormat = @"[%@][/%@]";
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    
     NSString *sarcasmTag = nil;
     if ([userDefaults valueForKey:kSarcasmTagOpenKey] != nil && [userDefaults valueForKey:kSarcasmTagCloseKey]) {
         sarcasmTag = [NSString stringWithFormat:kCustomTagFormat, [userDefaults valueForKey:kSarcasmTagOpenKey], [userDefaults valueForKey:kSarcasmTagCloseKey]];
