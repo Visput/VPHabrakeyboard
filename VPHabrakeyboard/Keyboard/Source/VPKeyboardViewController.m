@@ -130,7 +130,10 @@
 }
 
 - (void)moveTextPositionToInputPointForTag:(NSString *)tag {
-    NSArray *inputPointLabels = @[@"]", @"://", @"=\"", @">"];
+    static NSArray *inputPointLabels = nil;
+    if (inputPointLabels == nil) {
+        inputPointLabels = @[@"]", @"://", @"=\"", @">"];
+    }
     for (NSString *label in inputPointLabels) {
         NSRange labelRange = [tag rangeOfString:label];
         if (labelRange.location != NSNotFound) {
