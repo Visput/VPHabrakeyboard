@@ -31,171 +31,83 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AY-Yg-r4v">
                     <rect key="frame" x="5" y="87" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="39" id="5Sn-gX-MVp"/>
-                        <constraint firstAttribute="height" constant="39" id="rA9-OB-yqh"/>
-                        <constraint firstAttribute="width" constant="34" id="tQn-QO-NeO"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Ссылка" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="5Sn-gX-MVp"/>
-                            <exclude reference="rA9-OB-yqh"/>
-                            <exclude reference="tQn-QO-NeO"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="Ixs-8L-Sdh"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQ7-h7-wOe">
                     <rect key="frame" x="217" y="87" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="39" id="NFb-0l-4N1"/>
-                        <constraint firstAttribute="height" constant="39" id="mn0-2U-zgG"/>
-                        <constraint firstAttribute="width" constant="34" id="nx7-wO-VtW"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Видео" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="NFb-0l-4N1"/>
-                            <exclude reference="mn0-2U-zgG"/>
-                            <exclude reference="nx7-wO-VtW"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="AP7-Vr-HdT"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyF-4b-zng">
                     <rect key="frame" x="111" y="87" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="34" id="gR9-dW-DEz"/>
-                        <constraint firstAttribute="height" constant="39" id="hAO-ed-HwP"/>
-                        <constraint firstAttribute="height" constant="39" id="yWS-Va-7Cz"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Картинка" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="gR9-dW-DEz"/>
-                            <exclude reference="hAO-ed-HwP"/>
-                            <exclude reference="yWS-Va-7Cz"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="ENX-C0-Uig"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEe-hz-LVI">
                     <rect key="frame" x="5" y="5" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="39" id="G2C-Cx-2SJ"/>
-                        <constraint firstAttribute="width" constant="34" id="Gnd-RN-Z1L"/>
-                        <constraint firstAttribute="height" constant="39" id="RCs-K3-jKp"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Жирный" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="G2C-Cx-2SJ"/>
-                            <exclude reference="Gnd-RN-Z1L"/>
-                            <exclude reference="RCs-K3-jKp"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="rjF-rl-ZZh"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQS-Fn-3ih">
                     <rect key="frame" x="217" y="5" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="34" id="NqJ-iq-6fX"/>
-                        <constraint firstAttribute="height" constant="39" id="hmX-f6-8wV"/>
-                        <constraint firstAttribute="height" constant="39" id="xa4-Hn-jjP"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Подчеркнутый" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="NqJ-iq-6fX"/>
-                            <exclude reference="hmX-f6-8wV"/>
-                            <exclude reference="xa4-Hn-jjP"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="4Xo-E5-9kP"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hg-Bx-8Q7">
                     <rect key="frame" x="111" y="5" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="39" id="nWe-dK-Aql"/>
-                        <constraint firstAttribute="width" constant="34" id="sRk-CC-4eh"/>
-                        <constraint firstAttribute="height" constant="39" id="wd1-tG-f8u"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Курсив" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="nWe-dK-Aql"/>
-                            <exclude reference="sRk-CC-4eh"/>
-                            <exclude reference="wd1-tG-f8u"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="Sfa-Ik-60t"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnI-NW-96C">
                     <rect key="frame" x="89" y="172" width="142" height="39"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="39" id="9jY-TA-iVs"/>
-                        <constraint firstAttribute="width" constant="34" id="onp-eU-UIM"/>
-                        <constraint firstAttribute="height" constant="39" id="xey-jp-uPs"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Хабраюзер" backgroundImage="button_white_large">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="9jY-TA-iVs"/>
-                            <exclude reference="onp-eU-UIM"/>
-                            <exclude reference="xey-jp-uPs"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="xrN-iT-GSw"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA2-Ya-9GD" userLabel="Dismiss">
                     <rect key="frame" x="47" y="172" width="34" height="39"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="34" id="9pB-ee-ScJ"/>
-                        <constraint firstAttribute="height" constant="39" id="iWc-rt-fS8"/>
-                    </constraints>
                     <state key="normal" image="button_hide">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -205,10 +117,6 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ8-iP-7il" userLabel="Delete">
                     <rect key="frame" x="281" y="172" width="34" height="39"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="39" id="St9-rO-Ghj"/>
-                        <constraint firstAttribute="width" constant="34" id="T28-sQ-RTm"/>
-                    </constraints>
                     <state key="normal" image="button_delete">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -218,10 +126,6 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PM-eQ-ICB" userLabel="Globe">
                     <rect key="frame" x="5" y="172" width="34" height="39"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="34" id="Crq-Tm-v6m"/>
-                        <constraint firstAttribute="height" constant="39" id="hOO-mU-EDI"/>
-                    </constraints>
                     <state key="normal" image="button_globe">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -231,138 +135,55 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LC-Ja-93c">
                     <rect key="frame" x="5" y="46" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="39" id="8dl-sZ-l9t"/>
-                        <constraint firstAttribute="height" constant="39" id="KuV-6L-xMe"/>
-                        <constraint firstAttribute="width" constant="34" id="rXs-hx-QTU"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Зачеркнутый" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="8dl-sZ-l9t"/>
-                            <exclude reference="KuV-6L-xMe"/>
-                            <exclude reference="rXs-hx-QTU"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="rgz-mP-coh"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljl-ty-WUb">
                     <rect key="frame" x="217" y="46" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="34" id="79H-0b-ALg"/>
-                        <constraint firstAttribute="height" constant="39" id="Ofp-Bo-OhL"/>
-                        <constraint firstAttribute="height" constant="39" id="dLH-Pc-ZDN"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Код" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="79H-0b-ALg"/>
-                            <exclude reference="Ofp-Bo-OhL"/>
-                            <exclude reference="dLH-Pc-ZDN"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="s8m-XE-Mit"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exn-FN-cLJ">
                     <rect key="frame" x="111" y="46" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="34" id="Qlt-KS-NkL"/>
-                        <constraint firstAttribute="height" constant="39" id="bps-Iu-u4o"/>
-                        <constraint firstAttribute="height" constant="39" id="m2Y-4M-RAO"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Цитата" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="Qlt-KS-NkL"/>
-                            <exclude reference="bps-Iu-u4o"/>
-                            <exclude reference="m2Y-4M-RAO"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="pEC-5i-Xvd"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-hR-6Yf">
-                    <rect key="frame" x="5" y="128" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="39" id="aTu-La-aWS"/>
-                        <constraint firstAttribute="width" constant="34" id="c49-CR-3jz"/>
-                        <constraint firstAttribute="height" constant="39" id="sz9-oA-DGT"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                    <state key="normal" title="Спойлер" backgroundImage="button_white">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="aTu-La-aWS"/>
-                            <exclude reference="c49-CR-3jz"/>
-                            <exclude reference="sz9-oA-DGT"/>
-                        </mask>
-                    </variation>
-                    <connections>
-                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="s1P-dx-xuF"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3D-pH-ftd">
                     <rect key="frame" x="217" y="128" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="34" id="3n5-1L-XdI"/>
-                        <constraint firstAttribute="height" constant="39" id="7CI-9K-wZo"/>
-                        <constraint firstAttribute="height" constant="39" id="UlQ-BA-PRn"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Зануда" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="3n5-1L-XdI"/>
-                            <exclude reference="7CI-9K-wZo"/>
-                            <exclude reference="UlQ-BA-PRn"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="lhd-zz-Uul"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPX-Ec-cHD">
                     <rect key="frame" x="111" y="128" width="98" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="39" id="HAo-T3-MSC"/>
-                        <constraint firstAttribute="width" constant="34" id="P0y-8Q-mn6"/>
-                        <constraint firstAttribute="height" constant="39" id="kVP-Tv-NKg"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Сарказм" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="HAo-T3-MSC"/>
-                            <exclude reference="P0y-8Q-mn6"/>
-                            <exclude reference="kVP-Tv-NKg"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="nWu-uC-GEE"/>
                     </connections>
@@ -370,10 +191,6 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQh-El-1Kx" userLabel="Clear">
                     <rect key="frame" x="239" y="172" width="34" height="39"/>
                     <gestureRecognizers/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="34" id="X3l-12-n1J"/>
-                        <constraint firstAttribute="height" constant="39" id="Z0z-0J-Etp"/>
-                    </constraints>
                     <state key="normal" image="button_clear">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -381,119 +198,101 @@
                         <outletCollection property="gestureRecognizers" destination="vy4-5e-PPD" appends="YES" id="Lmz-vT-fCA"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-hR-6Yf">
+                    <rect key="frame" x="5" y="128" width="98" height="33"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal" title="Спойлер" backgroundImage="button_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onHabraButtonPressed:" destination="-1" eventType="touchUpInside" id="s1P-dx-xuF"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.83921575546264648" green="0.85490202903747559" blue="0.87450987100601196" alpha="1" colorSpace="deviceRGB"/>
             <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="b3D-pH-ftd" firstAttribute="leading" secondItem="GPX-Ec-cHD" secondAttribute="trailing" constant="8" id="06L-2T-McG"/>
-                <constraint firstItem="b3D-pH-ftd" firstAttribute="top" secondItem="QQ7-h7-wOe" secondAttribute="bottom" constant="8" id="0AW-Gs-pq8"/>
                 <constraint firstItem="QQ7-h7-wOe" firstAttribute="leading" secondItem="KyF-4b-zng" secondAttribute="trailing" constant="8" id="0Se-eY-RNs"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="2LC-Ja-93c" secondAttribute="width" id="0iG-d0-7bw"/>
-                <constraint firstItem="7hg-Bx-8Q7" firstAttribute="leading" secondItem="MEe-hz-LVI" secondAttribute="trailing" constant="8" id="0oH-SN-cPz"/>
-                <constraint firstItem="2LC-Ja-93c" firstAttribute="top" secondItem="MEe-hz-LVI" secondAttribute="bottom" constant="8" id="1GI-QK-yBs"/>
                 <constraint firstItem="1PM-eQ-ICB" firstAttribute="top" secondItem="pBL-hR-6Yf" secondAttribute="bottom" constant="11" id="1TH-Bj-t9T"/>
-                <constraint firstAttribute="trailing" secondItem="gQ8-iP-7il" secondAttribute="trailing" constant="8" id="2co-5d-npI"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="b3D-pH-ftd" secondAttribute="height" id="2yk-Pf-HLz"/>
-                <constraint firstItem="GPX-Ec-cHD" firstAttribute="leading" secondItem="pBL-hR-6Yf" secondAttribute="trailing" constant="8" id="488-v7-hFF"/>
-                <constraint firstItem="SA2-Ya-9GD" firstAttribute="leading" secondItem="1PM-eQ-ICB" secondAttribute="trailing" constant="8" id="4Jb-e1-xrR"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="exn-FN-cLJ" secondAttribute="height" id="4yq-D6-WbO"/>
                 <constraint firstItem="QQ7-h7-wOe" firstAttribute="top" secondItem="Ljl-ty-WUb" secondAttribute="bottom" constant="8" id="5DP-cu-Ivp"/>
-                <constraint firstItem="OQS-Fn-3ih" firstAttribute="leading" secondItem="7hg-Bx-8Q7" secondAttribute="trailing" constant="8" id="5L8-a1-hfM"/>
-                <constraint firstItem="Ljl-ty-WUb" firstAttribute="top" secondItem="OQS-Fn-3ih" secondAttribute="bottom" constant="8" id="5fu-Sw-JFf"/>
-                <constraint firstItem="gQ8-iP-7il" firstAttribute="leading" secondItem="GQh-El-1Kx" secondAttribute="trailing" constant="8" id="6EB-fw-x0J"/>
                 <constraint firstItem="OQS-Fn-3ih" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="6yo-Ip-pGh"/>
                 <constraint firstItem="Ljl-ty-WUb" firstAttribute="top" secondItem="OQS-Fn-3ih" secondAttribute="bottom" constant="8" id="8Am-Ry-EwY"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="MEe-hz-LVI" secondAttribute="height" id="8aH-82-U9D"/>
+                <constraint firstItem="b3D-pH-ftd" firstAttribute="leading" secondItem="OQS-Fn-3ih" secondAttribute="trailing" constant="8" id="8fp-ak-BDF"/>
                 <constraint firstItem="SA2-Ya-9GD" firstAttribute="leading" secondItem="1PM-eQ-ICB" secondAttribute="trailing" constant="8" id="Aat-jE-jMH"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="OQS-Fn-3ih" secondAttribute="width" id="AoF-Ez-g5a"/>
+                <constraint firstAttribute="trailing" secondItem="b3D-pH-ftd" secondAttribute="trailing" constant="5" id="Bi5-FG-qMq"/>
                 <constraint firstAttribute="trailing" secondItem="Ljl-ty-WUb" secondAttribute="trailing" constant="5" id="Bxc-0S-OFn"/>
-                <constraint firstItem="exn-FN-cLJ" firstAttribute="leading" secondItem="2LC-Ja-93c" secondAttribute="trailing" constant="8" id="C9b-YS-qlH"/>
                 <constraint firstItem="MEe-hz-LVI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="DGf-hS-Asw"/>
-                <constraint firstItem="QQ7-h7-wOe" firstAttribute="leading" secondItem="KyF-4b-zng" secondAttribute="trailing" constant="8" id="DsM-KW-lIb"/>
+                <constraint firstItem="GPX-Ec-cHD" firstAttribute="leading" secondItem="Ljl-ty-WUb" secondAttribute="trailing" constant="8" id="DeX-Vd-YHs"/>
                 <constraint firstItem="GQh-El-1Kx" firstAttribute="top" secondItem="b3D-pH-ftd" secondAttribute="bottom" constant="11" id="EMZ-dr-UDm"/>
-                <constraint firstItem="GQh-El-1Kx" firstAttribute="leading" secondItem="DnI-NW-96C" secondAttribute="trailing" constant="8" id="Fqp-0W-Gcx"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="QQ7-h7-wOe" secondAttribute="height" id="H7j-Af-uxA"/>
+                <constraint firstItem="b3D-pH-ftd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="Hd3-hz-IBS"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="Ljl-ty-WUb" secondAttribute="width" id="HiJ-2u-hTq"/>
                 <constraint firstAttribute="bottom" secondItem="1PM-eQ-ICB" secondAttribute="bottom" constant="5" id="IBQ-sg-GRu"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="GPX-Ec-cHD" secondAttribute="width" id="IJh-Gh-c43"/>
                 <constraint firstItem="b3D-pH-ftd" firstAttribute="top" secondItem="QQ7-h7-wOe" secondAttribute="bottom" constant="8" id="IXg-Cc-Sik"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="exn-FN-cLJ" secondAttribute="width" id="KQp-HF-yvb"/>
                 <constraint firstItem="GQh-El-1Kx" firstAttribute="leading" secondItem="DnI-NW-96C" secondAttribute="trailing" constant="8" id="Ks5-xo-g9i"/>
-                <constraint firstItem="KyF-4b-zng" firstAttribute="top" secondItem="exn-FN-cLJ" secondAttribute="bottom" constant="8" id="LYg-1R-r5Q"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="KyF-4b-zng" secondAttribute="width" id="NDL-Mn-adQ"/>
+                <constraint firstItem="gQ8-iP-7il" firstAttribute="top" secondItem="pBL-hR-6Yf" secondAttribute="bottom" constant="11" id="NcV-XJ-gai"/>
                 <constraint firstItem="exn-FN-cLJ" firstAttribute="leading" secondItem="2LC-Ja-93c" secondAttribute="trailing" constant="8" id="Nxg-XW-jJ6"/>
                 <constraint firstItem="1PM-eQ-ICB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="OXc-Es-fh0"/>
                 <constraint firstAttribute="bottom" secondItem="gQ8-iP-7il" secondAttribute="bottom" constant="5" id="Oe4-zY-Tf0"/>
                 <constraint firstItem="2LC-Ja-93c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="P98-Do-Qow"/>
                 <constraint firstItem="2LC-Ja-93c" firstAttribute="top" secondItem="MEe-hz-LVI" secondAttribute="bottom" constant="8" id="POx-S2-eTH"/>
-                <constraint firstItem="0AY-Yg-r4v" firstAttribute="top" secondItem="2LC-Ja-93c" secondAttribute="bottom" constant="8" id="Pjf-1x-Quk"/>
-                <constraint firstItem="DnI-NW-96C" firstAttribute="leading" secondItem="SA2-Ya-9GD" secondAttribute="trailing" constant="8" id="QQ2-lB-Z2N"/>
-                <constraint firstItem="GPX-Ec-cHD" firstAttribute="top" secondItem="KyF-4b-zng" secondAttribute="bottom" constant="8" id="RV9-AM-UeT"/>
+                <constraint firstItem="GQh-El-1Kx" firstAttribute="top" secondItem="pBL-hR-6Yf" secondAttribute="bottom" constant="11" id="Pj7-DK-c9m"/>
+                <constraint firstAttribute="trailing" secondItem="pBL-hR-6Yf" secondAttribute="trailing" constant="5" id="Qpr-9q-Lrd"/>
                 <constraint firstAttribute="bottom" secondItem="SA2-Ya-9GD" secondAttribute="bottom" constant="5" id="SZp-Qb-K8L"/>
                 <constraint firstItem="Ljl-ty-WUb" firstAttribute="leading" secondItem="exn-FN-cLJ" secondAttribute="trailing" constant="8" id="TKy-Xx-xcw"/>
-                <constraint firstItem="GQh-El-1Kx" firstAttribute="top" secondItem="b3D-pH-ftd" secondAttribute="bottom" constant="11" id="Tf2-sW-Gig"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="b3D-pH-ftd" secondAttribute="width" id="ULO-x3-niu"/>
                 <constraint firstItem="SA2-Ya-9GD" firstAttribute="top" secondItem="pBL-hR-6Yf" secondAttribute="bottom" constant="11" id="Ug5-fT-bqt"/>
+                <constraint firstItem="SA2-Ya-9GD" firstAttribute="top" secondItem="0AY-Yg-r4v" secondAttribute="bottom" constant="11" id="Ule-uV-bMZ"/>
                 <constraint firstItem="GPX-Ec-cHD" firstAttribute="leading" secondItem="pBL-hR-6Yf" secondAttribute="trailing" constant="8" id="Uwo-MU-fwe"/>
-                <constraint firstItem="gQ8-iP-7il" firstAttribute="leading" secondItem="1PM-eQ-ICB" secondAttribute="trailing" constant="242" id="VDn-Kv-30d"/>
                 <constraint firstItem="MEe-hz-LVI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="VMj-9H-gef"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="QQ7-h7-wOe" secondAttribute="width" id="X4p-Ql-AZt"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="XBK-mI-V9N"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="top" secondItem="2LC-Ja-93c" secondAttribute="bottom" constant="8" id="YKs-4W-1xi"/>
-                <constraint firstItem="QQ7-h7-wOe" firstAttribute="leading" secondItem="KyF-4b-zng" secondAttribute="trailing" constant="8" id="YTB-dw-Et6"/>
                 <constraint firstItem="pBL-hR-6Yf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="YZq-Xx-yMl"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1PM-eQ-ICB" secondAttribute="bottom" id="ZkE-jY-ZaN"/>
                 <constraint firstAttribute="trailing" secondItem="gQ8-iP-7il" secondAttribute="trailing" constant="5" id="Zp6-ff-gyT"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="OQS-Fn-3ih" secondAttribute="height" id="aeC-Xr-u2v"/>
                 <constraint firstItem="DnI-NW-96C" firstAttribute="leading" secondItem="SA2-Ya-9GD" secondAttribute="trailing" constant="8" id="b8g-L0-pAx"/>
-                <constraint firstItem="GQh-El-1Kx" firstAttribute="top" secondItem="b3D-pH-ftd" secondAttribute="bottom" constant="11" id="bMt-ro-2tB"/>
                 <constraint firstItem="OQS-Fn-3ih" firstAttribute="leading" secondItem="7hg-Bx-8Q7" secondAttribute="trailing" constant="8" id="bS4-ci-9IT"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="pBL-hR-6Yf" secondAttribute="width" id="cBT-7D-V6t"/>
-                <constraint firstItem="gQ8-iP-7il" firstAttribute="leading" secondItem="GQh-El-1Kx" secondAttribute="trailing" constant="8" id="cZp-CF-cyg"/>
-                <constraint firstItem="b3D-pH-ftd" firstAttribute="leading" secondItem="GPX-Ec-cHD" secondAttribute="trailing" constant="8" id="dK4-K2-FER"/>
                 <constraint firstAttribute="bottom" secondItem="DnI-NW-96C" secondAttribute="bottom" constant="5" id="dS3-Pq-OJ8"/>
                 <constraint firstItem="7hg-Bx-8Q7" firstAttribute="leading" secondItem="MEe-hz-LVI" secondAttribute="trailing" constant="8" id="djr-ez-gfS"/>
-                <constraint firstItem="Ljl-ty-WUb" firstAttribute="leading" secondItem="exn-FN-cLJ" secondAttribute="trailing" constant="8" id="e7R-RA-BKz"/>
-                <constraint firstItem="exn-FN-cLJ" firstAttribute="top" secondItem="7hg-Bx-8Q7" secondAttribute="bottom" constant="8" id="eKX-yA-vgf"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="7hg-Bx-8Q7" secondAttribute="height" id="euA-ca-ROI"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="2LC-Ja-93c" secondAttribute="height" id="fBR-Fj-oHU"/>
                 <constraint firstItem="gQ8-iP-7il" firstAttribute="top" secondItem="b3D-pH-ftd" secondAttribute="bottom" constant="11" id="fBc-Nw-O2U"/>
-                <constraint firstItem="KyF-4b-zng" firstAttribute="leading" secondItem="0AY-Yg-r4v" secondAttribute="trailing" constant="8" id="fq0-Dt-ovv"/>
-                <constraint firstAttribute="bottom" secondItem="1PM-eQ-ICB" secondAttribute="bottom" constant="8" id="gGP-Mo-X2j"/>
-                <constraint firstItem="exn-FN-cLJ" firstAttribute="leading" secondItem="2LC-Ja-93c" secondAttribute="trailing" constant="8" id="gLe-ah-aRD"/>
-                <constraint firstItem="Ljl-ty-WUb" firstAttribute="leading" secondItem="exn-FN-cLJ" secondAttribute="trailing" constant="8" id="gNh-XM-Gm7"/>
-                <constraint firstItem="DnI-NW-96C" firstAttribute="top" secondItem="GPX-Ec-cHD" secondAttribute="bottom" constant="11" id="hm5-cC-ue2"/>
+                <constraint firstItem="pBL-hR-6Yf" firstAttribute="top" secondItem="GPX-Ec-cHD" secondAttribute="bottom" constant="8" id="hMX-Pe-5WY"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="Ljl-ty-WUb" secondAttribute="height" id="iWx-Rz-DQ6"/>
                 <constraint firstItem="exn-FN-cLJ" firstAttribute="top" secondItem="7hg-Bx-8Q7" secondAttribute="bottom" constant="8" id="iaU-ji-Jcq"/>
                 <constraint firstAttribute="trailing" secondItem="QQ7-h7-wOe" secondAttribute="trailing" constant="5" id="kbF-or-abX"/>
-                <constraint firstItem="GPX-Ec-cHD" firstAttribute="leading" secondItem="pBL-hR-6Yf" secondAttribute="trailing" constant="8" id="khM-0c-M3c"/>
-                <constraint firstItem="7hg-Bx-8Q7" firstAttribute="leading" secondItem="MEe-hz-LVI" secondAttribute="trailing" constant="8" id="krS-dV-QBh"/>
                 <constraint firstItem="gQ8-iP-7il" firstAttribute="leading" secondItem="GQh-El-1Kx" secondAttribute="trailing" constant="8" id="m0Q-Gb-CHw"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="GPX-Ec-cHD" secondAttribute="height" id="m5H-bc-AIS"/>
-                <constraint firstItem="pBL-hR-6Yf" firstAttribute="top" secondItem="0AY-Yg-r4v" secondAttribute="bottom" constant="8" id="mPH-ic-DiR"/>
+                <constraint firstItem="1PM-eQ-ICB" firstAttribute="top" secondItem="0AY-Yg-r4v" secondAttribute="bottom" constant="11" id="mFk-QX-4n2"/>
                 <constraint firstAttribute="bottom" secondItem="GQh-El-1Kx" secondAttribute="bottom" constant="5" id="mzl-7t-bbl"/>
-                <constraint firstItem="KyF-4b-zng" firstAttribute="leading" secondItem="0AY-Yg-r4v" secondAttribute="trailing" constant="8" id="n8D-WW-tMz"/>
-                <constraint firstItem="QQ7-h7-wOe" firstAttribute="top" secondItem="Ljl-ty-WUb" secondAttribute="bottom" constant="8" id="ngX-t5-WZd"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="7hg-Bx-8Q7" secondAttribute="width" id="ooe-er-VjG"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="KyF-4b-zng" secondAttribute="height" id="oso-dv-428"/>
                 <constraint firstItem="KyF-4b-zng" firstAttribute="leading" secondItem="0AY-Yg-r4v" secondAttribute="trailing" constant="8" id="pvh-VO-z4J"/>
                 <constraint firstAttribute="trailing" secondItem="OQS-Fn-3ih" secondAttribute="trailing" constant="5" id="qKu-wi-ggS"/>
-                <constraint firstItem="DnI-NW-96C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="qri-Tr-Th7"/>
-                <constraint firstItem="DnI-NW-96C" firstAttribute="leading" secondItem="SA2-Ya-9GD" secondAttribute="trailing" constant="8" id="r4a-uA-VZZ"/>
                 <constraint firstItem="KyF-4b-zng" firstAttribute="top" secondItem="exn-FN-cLJ" secondAttribute="bottom" constant="8" id="sMp-Up-3ux"/>
+                <constraint firstItem="DnI-NW-96C" firstAttribute="top" secondItem="pBL-hR-6Yf" secondAttribute="bottom" constant="11" id="suW-TC-q1T"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="height" secondItem="pBL-hR-6Yf" secondAttribute="height" id="tI3-hO-qtk"/>
                 <constraint firstItem="7hg-Bx-8Q7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="uBE-3h-0pQ"/>
-                <constraint firstItem="GQh-El-1Kx" firstAttribute="leading" secondItem="DnI-NW-96C" secondAttribute="trailing" constant="8" id="uYr-SZ-ioA"/>
                 <constraint firstItem="GPX-Ec-cHD" firstAttribute="top" secondItem="KyF-4b-zng" secondAttribute="bottom" constant="8" id="ug4-0p-OdX"/>
-                <constraint firstItem="1PM-eQ-ICB" firstAttribute="top" secondItem="pBL-hR-6Yf" secondAttribute="bottom" constant="11" id="wTj-Ji-Lhg"/>
                 <constraint firstItem="DnI-NW-96C" firstAttribute="top" secondItem="GPX-Ec-cHD" secondAttribute="bottom" constant="11" id="wV1-6C-gl2"/>
-                <constraint firstItem="b3D-pH-ftd" firstAttribute="leading" secondItem="GPX-Ec-cHD" secondAttribute="trailing" constant="8" id="xFo-vq-3W3"/>
-                <constraint firstItem="SA2-Ya-9GD" firstAttribute="top" secondItem="pBL-hR-6Yf" secondAttribute="bottom" constant="11" id="xVP-Uk-niS"/>
+                <constraint firstAttribute="trailing" secondItem="GPX-Ec-cHD" secondAttribute="trailing" constant="5" id="wp4-pF-JLQ"/>
+                <constraint firstItem="GPX-Ec-cHD" firstAttribute="top" secondItem="b3D-pH-ftd" secondAttribute="bottom" constant="8" id="x3T-KM-hic"/>
+                <constraint firstItem="pBL-hR-6Yf" firstAttribute="leading" secondItem="QQ7-h7-wOe" secondAttribute="trailing" constant="8" id="xOf-yO-Tqa"/>
                 <constraint firstItem="0AY-Yg-r4v" firstAttribute="width" secondItem="MEe-hz-LVI" secondAttribute="width" id="yaR-Ph-fxP"/>
                 <constraint firstAttribute="trailing" secondItem="b3D-pH-ftd" secondAttribute="trailing" constant="5" id="z3F-TR-N1c"/>
                 <constraint firstItem="pBL-hR-6Yf" firstAttribute="top" secondItem="0AY-Yg-r4v" secondAttribute="bottom" constant="8" id="zB4-dt-IOz"/>
-                <constraint firstItem="GQh-El-1Kx" firstAttribute="top" secondItem="b3D-pH-ftd" secondAttribute="bottom" constant="11" id="zJ3-f9-CDB"/>
-                <constraint firstItem="OQS-Fn-3ih" firstAttribute="leading" secondItem="7hg-Bx-8Q7" secondAttribute="trailing" constant="8" id="zua-4i-WBS"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
@@ -502,56 +301,60 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">
                 <mask key="constraints">
-                    <exclude reference="1GI-QK-yBs"/>
-                    <exclude reference="Pjf-1x-Quk"/>
-                    <exclude reference="0oH-SN-cPz"/>
-                    <exclude reference="krS-dV-QBh"/>
-                    <exclude reference="C9b-YS-qlH"/>
-                    <exclude reference="eKX-yA-vgf"/>
-                    <exclude reference="gLe-ah-aRD"/>
-                    <exclude reference="mPH-ic-DiR"/>
-                    <exclude reference="LYg-1R-r5Q"/>
-                    <exclude reference="fq0-Dt-ovv"/>
-                    <exclude reference="n8D-WW-tMz"/>
-                    <exclude reference="488-v7-hFF"/>
-                    <exclude reference="RV9-AM-UeT"/>
-                    <exclude reference="khM-0c-M3c"/>
-                    <exclude reference="ZkE-jY-ZaN"/>
-                    <exclude reference="gGP-Mo-X2j"/>
-                    <exclude reference="wTj-Ji-Lhg"/>
-                    <exclude reference="4Jb-e1-xrR"/>
-                    <exclude reference="xVP-Uk-niS"/>
-                    <exclude reference="QQ2-lB-Z2N"/>
-                    <exclude reference="hm5-cC-ue2"/>
-                    <exclude reference="qri-Tr-Th7"/>
-                    <exclude reference="r4a-uA-VZZ"/>
-                    <exclude reference="5L8-a1-hfM"/>
-                    <exclude reference="zua-4i-WBS"/>
-                    <exclude reference="5fu-Sw-JFf"/>
-                    <exclude reference="e7R-RA-BKz"/>
-                    <exclude reference="gNh-XM-Gm7"/>
-                    <exclude reference="DsM-KW-lIb"/>
-                    <exclude reference="YTB-dw-Et6"/>
-                    <exclude reference="ngX-t5-WZd"/>
-                    <exclude reference="0AW-Gs-pq8"/>
-                    <exclude reference="dK4-K2-FER"/>
-                    <exclude reference="xFo-vq-3W3"/>
-                    <exclude reference="Fqp-0W-Gcx"/>
-                    <exclude reference="Tf2-sW-Gig"/>
-                    <exclude reference="bMt-ro-2tB"/>
-                    <exclude reference="uYr-SZ-ioA"/>
-                    <exclude reference="zJ3-f9-CDB"/>
-                    <exclude reference="2co-5d-npI"/>
-                    <exclude reference="6EB-fw-x0J"/>
-                    <exclude reference="VDn-Kv-30d"/>
-                    <exclude reference="cZp-CF-cyg"/>
+                    <exclude reference="Qpr-9q-Lrd"/>
+                    <exclude reference="hMX-Pe-5WY"/>
+                    <exclude reference="xOf-yO-Tqa"/>
+                    <exclude reference="DeX-Vd-YHs"/>
+                    <exclude reference="wp4-pF-JLQ"/>
+                    <exclude reference="x3T-KM-hic"/>
+                    <exclude reference="mFk-QX-4n2"/>
+                    <exclude reference="Ule-uV-bMZ"/>
+                    <exclude reference="suW-TC-q1T"/>
+                    <exclude reference="8fp-ak-BDF"/>
+                    <exclude reference="Bi5-FG-qMq"/>
+                    <exclude reference="Hd3-hz-IBS"/>
+                    <exclude reference="Pj7-DK-c9m"/>
+                    <exclude reference="NcV-XJ-gai"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <include reference="Qpr-9q-Lrd"/>
+                    <exclude reference="YZq-Xx-yMl"/>
+                    <include reference="hMX-Pe-5WY"/>
+                    <include reference="xOf-yO-Tqa"/>
+                    <exclude reference="zB4-dt-IOz"/>
+                    <include reference="DeX-Vd-YHs"/>
+                    <exclude reference="Uwo-MU-fwe"/>
+                    <exclude reference="ug4-0p-OdX"/>
+                    <include reference="wp4-pF-JLQ"/>
+                    <include reference="x3T-KM-hic"/>
+                    <exclude reference="1TH-Bj-t9T"/>
+                    <include reference="mFk-QX-4n2"/>
+                    <exclude reference="Ug5-fT-bqt"/>
+                    <include reference="Ule-uV-bMZ"/>
+                    <include reference="suW-TC-q1T"/>
+                    <exclude reference="wV1-6C-gl2"/>
+                    <exclude reference="qKu-wi-ggS"/>
+                    <exclude reference="Bxc-0S-OFn"/>
+                    <exclude reference="kbF-or-abX"/>
+                    <exclude reference="06L-2T-McG"/>
+                    <include reference="8fp-ak-BDF"/>
+                    <include reference="Bi5-FG-qMq"/>
+                    <include reference="Hd3-hz-IBS"/>
+                    <exclude reference="IXg-Cc-Sik"/>
+                    <exclude reference="z3F-TR-N1c"/>
+                    <exclude reference="EMZ-dr-UDm"/>
+                    <include reference="Pj7-DK-c9m"/>
+                    <include reference="NcV-XJ-gai"/>
+                    <exclude reference="fBc-Nw-O2U"/>
                 </mask>
             </variation>
             <connections>
                 <outletCollection property="gestureRecognizers" destination="4Zp-A9-uBS" appends="YES" id="8Ck-iV-wpU"/>
                 <outletCollection property="gestureRecognizers" destination="DOH-sG-E7s" appends="YES" id="qnF-mO-OwY"/>
             </connections>
-            <point key="canvasLocation" x="109" y="256"/>
+            <point key="canvasLocation" x="-76" y="252"/>
         </view>
         <swipeGestureRecognizer direction="left" id="4Zp-A9-uBS">
             <connections>

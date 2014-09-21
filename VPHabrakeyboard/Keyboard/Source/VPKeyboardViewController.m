@@ -31,6 +31,24 @@
     [self loadTags];
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    static CGFloat const kKeyboardPortraitModeScale = 1.5; // ≈ 320 / 216
+    if (!CGRectIsEmpty(self.view.frame)) {
+        CGFloat currentScale = self.view.frame.size.width / self.view.frame.size.height;
+        BOOL isPortraitMode = currentScale < kKeyboardPortraitModeScale;
+        UITraitCollection *horizontalSizeClass = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassUnspecified];
+        UITraitCollection *verticalSizeClass = nil;
+        if (isPortraitMode) {
+            verticalSizeClass = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassUnspecified];
+        } else {
+            verticalSizeClass = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassCompact];
+        }
+        UITraitCollection *traitCollection = [UITraitCollection traitCollectionWithTraitsFromCollections:@[horizontalSizeClass, verticalSizeClass]];
+        [self setOverrideTraitCollection:traitCollection forChildViewController:self];
+    }
+}
+
 #pragma mark -
 #pragma mark Action
 
