@@ -14,6 +14,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *sarcasmButton;
 @property (nonatomic, strong) IBOutlet UIButton *downerButton;
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *tagButtons;
+@property (nonatomic, strong) UIViewController *childViewController;
 
 @property (nonatomic, strong) NSDictionary *tagsDictionary;
 
@@ -37,6 +38,7 @@
     if (!CGRectIsEmpty(self.view.frame)) {
         CGFloat currentScale = self.view.frame.size.width / self.view.frame.size.height;
         BOOL isPortraitMode = currentScale < kKeyboardPortraitModeScale;
+        UITraitCollection *phoneSizeClass = [UITraitCollection traitCollectionWithUserInterfaceIdiom:UIUserInterfaceIdiomPhone];
         UITraitCollection *horizontalSizeClass = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassUnspecified];
         UITraitCollection *verticalSizeClass = nil;
         if (isPortraitMode) {
@@ -44,9 +46,13 @@
         } else {
             verticalSizeClass = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassCompact];
         }
-        UITraitCollection *traitCollection = [UITraitCollection traitCollectionWithTraitsFromCollections:@[horizontalSizeClass, verticalSizeClass]];
-        [self.parentViewController setOverrideTraitCollection:traitCollection forChildViewController:self];
+        UITraitCollection *traitCollection = [UITraitCollection traitCollectionWithTraitsFromCollections:@[horizontalSizeClass, verticalSizeClass, phoneSizeClass]];
+        [self setOverrideTraitCollection:traitCollection forChildViewController:self.childViewController];
     }
+}
+
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection  {
+    [super traitCollectionDidChange:previousTraitCollection];
 }
 
 #pragma mark -
@@ -107,7 +113,10 @@
 
 - (void)loadKeyboard {
     [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil];
+    self.childViewController = [[UIViewController alloc] init];
+    self.childViewController.view = self.keyboardView;
     self.keyboardView.frame = self.view.frame;
+    [self addChildViewController:self.childViewController];
     [self.view addSubview:self.keyboardView];
     
     // Make images resizable
