@@ -30,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AY-Yg-r4v">
-                    <rect key="frame" x="5" y="87" width="98" height="33"/>
+                    <rect key="frame" x="5" y="93" width="134" height="35"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Ссылка" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,7 +41,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQ7-h7-wOe">
-                    <rect key="frame" x="217" y="87" width="98" height="33"/>
+                    <rect key="frame" x="288" y="93" width="134" height="35"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Видео" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,7 +52,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyF-4b-zng">
-                    <rect key="frame" x="111" y="87" width="98" height="33"/>
+                    <rect key="frame" x="147" y="93" width="133" height="35"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Картинка" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,7 +63,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEe-hz-LVI">
-                    <rect key="frame" x="5" y="5" width="98" height="33"/>
+                    <rect key="frame" x="5" y="5" width="134" height="36"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Жирный" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,7 +74,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQS-Fn-3ih">
-                    <rect key="frame" x="217" y="5" width="98" height="33"/>
+                    <rect key="frame" x="288" y="5" width="134" height="36"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Подчеркнутый" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -85,7 +85,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hg-Bx-8Q7">
-                    <rect key="frame" x="111" y="5" width="98" height="33"/>
+                    <rect key="frame" x="147" y="5" width="133" height="36"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Курсив" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,7 +96,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnI-NW-96C">
-                    <rect key="frame" x="89" y="172" width="142" height="39"/>
+                    <rect key="frame" x="89" y="183" width="249" height="39"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Хабраюзер" backgroundImage="button_white_large">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,7 +107,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA2-Ya-9GD" userLabel="Dismiss">
-                    <rect key="frame" x="47" y="172" width="34" height="39"/>
+                    <rect key="frame" x="47" y="183" width="34" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="75M-HW-uv4"/>
+                        <constraint firstAttribute="height" constant="39" id="rnG-75-q57"/>
+                    </constraints>
                     <state key="normal" image="button_hide">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -116,7 +120,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ8-iP-7il" userLabel="Delete">
-                    <rect key="frame" x="281" y="172" width="34" height="39"/>
+                    <rect key="frame" x="388" y="183" width="34" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="HdC-Ig-fVF"/>
+                        <constraint firstAttribute="width" constant="34" id="f9E-cq-TuG"/>
+                    </constraints>
                     <state key="normal" image="button_delete">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -125,7 +133,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PM-eQ-ICB" userLabel="Globe">
-                    <rect key="frame" x="5" y="172" width="34" height="39"/>
+                    <rect key="frame" x="5" y="183" width="34" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="0wc-31-tY2"/>
+                        <constraint firstAttribute="height" constant="39" id="KzY-gh-P6i"/>
+                    </constraints>
                     <state key="normal" image="button_globe">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -134,7 +146,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LC-Ja-93c">
-                    <rect key="frame" x="5" y="46" width="98" height="33"/>
+                    <rect key="frame" x="5" y="49" width="134" height="36"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Зачеркнутый" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,7 +157,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljl-ty-WUb">
-                    <rect key="frame" x="217" y="46" width="98" height="33"/>
+                    <rect key="frame" x="288" y="49" width="134" height="36"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Код" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -156,7 +168,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exn-FN-cLJ">
-                    <rect key="frame" x="111" y="46" width="98" height="33"/>
+                    <rect key="frame" x="147" y="49" width="133" height="36"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Цитата" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,7 +179,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3D-pH-ftd">
-                    <rect key="frame" x="217" y="128" width="98" height="33"/>
+                    <rect key="frame" x="288" y="136" width="134" height="36"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Зануда" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,7 +190,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPX-Ec-cHD">
-                    <rect key="frame" x="111" y="128" width="98" height="33"/>
+                    <rect key="frame" x="147" y="136" width="133" height="36"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Сарказм" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -189,8 +201,12 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQh-El-1Kx" userLabel="Clear">
-                    <rect key="frame" x="239" y="172" width="34" height="39"/>
+                    <rect key="frame" x="346" y="183" width="34" height="39"/>
                     <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="06e-Wz-zi3"/>
+                        <constraint firstAttribute="width" constant="34" id="bLP-Ia-icv"/>
+                    </constraints>
                     <state key="normal" image="button_clear">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -199,7 +215,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-hR-6Yf">
-                    <rect key="frame" x="5" y="128" width="98" height="33"/>
+                    <rect key="frame" x="5" y="136" width="134" height="36"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <state key="normal" title="Спойлер" backgroundImage="button_white">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -354,7 +370,7 @@
                 <outletCollection property="gestureRecognizers" destination="4Zp-A9-uBS" appends="YES" id="8Ck-iV-wpU"/>
                 <outletCollection property="gestureRecognizers" destination="DOH-sG-E7s" appends="YES" id="qnF-mO-OwY"/>
             </connections>
-            <point key="canvasLocation" x="-76" y="252"/>
+            <point key="canvasLocation" x="10.5" y="258.5"/>
         </view>
         <swipeGestureRecognizer direction="left" id="4Zp-A9-uBS">
             <connections>

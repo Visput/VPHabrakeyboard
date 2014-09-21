@@ -45,7 +45,7 @@
             verticalSizeClass = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassCompact];
         }
         UITraitCollection *traitCollection = [UITraitCollection traitCollectionWithTraitsFromCollections:@[horizontalSizeClass, verticalSizeClass]];
-        [self setOverrideTraitCollection:traitCollection forChildViewController:self];
+        [self.parentViewController setOverrideTraitCollection:traitCollection forChildViewController:self];
     }
 }
 
