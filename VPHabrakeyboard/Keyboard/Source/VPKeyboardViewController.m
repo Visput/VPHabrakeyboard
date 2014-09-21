@@ -13,6 +13,7 @@
 @property (nonatomic, strong) IBOutlet UIView *keyboardView;
 @property (nonatomic, strong) IBOutlet UIButton *sarcasmButton;
 @property (nonatomic, strong) IBOutlet UIButton *downerButton;
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *tagButtons;
 
 @property (nonatomic, strong) NSDictionary *tagsDictionary;
 
@@ -90,6 +91,17 @@
     [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil];
     self.keyboardView.frame = self.view.frame;
     [self.view addSubview:self.keyboardView];
+    
+    // Make images resizable
+    for (UIButton *tagButton in self.tagButtons) {
+        UIImage *image = [tagButton backgroundImageForState:UIControlStateNormal];
+        UIEdgeInsets edgeInsets = UIEdgeInsetsMake(image.size.height / 2,
+                                                   image.size.width / 2,
+                                                   image.size.height / 2 + 1,
+                                                   image.size.width / 2 + 1);
+        [tagButton setBackgroundImage:[image resizableImageWithCapInsets:edgeInsets] forState:UIControlStateNormal];
+    }
+    
 }
 
 - (void)loadTags {
