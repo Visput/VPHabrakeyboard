@@ -9,5 +9,5 @@ Full description of project is available [here (RUS)](http://habrahabr.ru/post/2
 Run VPHabrakeyboardApp.xcodeproj on device or similuator. After that go to Device Settings -> General -> Keyboard -> Keybarods -> Add New Keyboard -> Choose "Хабр".
 If you need integrate this extension to your app, create new target for Cuatom Keyboard and copy contents of VPHabrakeyboard/Keyboard dir to your project.
 
-## Known issues
+## Known Issues
 Keyboard settings (available in global device settings) are not saved. No any changes can be applied. It's iOS8 bug.
